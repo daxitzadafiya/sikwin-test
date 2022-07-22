@@ -5,7 +5,7 @@
             :src="require(`@/assets/images/footerMenu/${menu.menu}.png`)"
             alt=""
             srcset=""
-            class="img-fluid w-75 pointer"
+            class="img-fluid pointer"
           />
     </div>
   </div>
@@ -52,5 +52,13 @@ background-color: #1a1a1a;
 position: sticky;
 bottom: 0;
 z-index: 99;
+}
+.bottom-menu img{
+  width: 75%;
+}
+@media (max-width:500px) {
+  .bottom-menu img{
+    width:50%;
+  }
 }
 </style>

@@ -2,13 +2,12 @@
   <div>
     <b-container fluid="md">
       <b-row>
-        <div class="col-sm-2 col-3">
+        <div class="col-2 pe-0 pe-sm-3">
           <div v-for="menu in menuList" :key="menu.id">
             <Menu-list :menuImg="menu.menuImg" />
           </div>
-          <!-- <Menu-list/> -->
         </div>
-        <div class="col-sm-10 col-9 ps-0 ps-sm-3">
+        <div class="col-10 ">
           <div v-for="game in playGames" :key="game.id">
             <Game-section :playgameImg="game.playGameImg" :backgroundColor="game.backgroundColor" :filter="game.filter"/>
           </div>
