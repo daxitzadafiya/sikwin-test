@@ -19,8 +19,6 @@ export default {
   name: "game-section",
   props:[
     'playgameImg',
-    'filter',
-    'backgroundColor'
   ]
 };
 </script>

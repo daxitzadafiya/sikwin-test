@@ -51,15 +51,15 @@
             <b-navbar-nav>
               <div class="accordion" role="tablist">
                 <b-card no-body class="card-border bg-transparent mb-1">
-                  <b-card-header header-tag="header" class="p-1" role="tab">
+                  <b-card-header v-b-toggle.accordion-1 header-tag="header" class="p-1 justify-content-between d-flex align-items-center" role="tab">
                     <div
                       block
-                      v-b-toggle.accordion-1
                       variant="transparent"
                       class="text-white py-3 fs-3 fw-normal"
                     >
                       IMPORTANT NOTICE!!!
                     </div>
+                    <b-icon icon="chevron-down" class="fs-4 down-arrow"></b-icon>
                   </b-card-header>
                   <b-collapse
                     id="accordion-1"
@@ -206,4 +206,5 @@ export default {
   background-image: url("/assets/images/header/popover.png") !important;
   font-size: 0;
 }
+
 </style>
